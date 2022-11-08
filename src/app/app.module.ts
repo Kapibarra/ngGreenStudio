@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { ServicesComponent } from './homepage/shared/components/services/service
 import { ProcessComponent } from './homepage/shared/components/process/process.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
+import { ProjectItemComponent } from './homepage/shared/components/projects/project-item/project-item.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
     ServicesComponent,
     ProcessComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     SwiperModule
   ],
   providers: [],
