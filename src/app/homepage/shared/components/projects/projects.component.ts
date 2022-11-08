@@ -1,5 +1,7 @@
+import { Projects } from './../../interfaces/projects';
 import { Component, OnInit } from '@angular/core';
 import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
+
 
 @Component({
   selector: 'app-projects',
@@ -18,6 +20,12 @@ export class ProjectsComponent implements OnInit {
       disableOnInteraction: false
     },
   };
+
+  projects: Projects[] = [ {
+    id: 1,
+    name: 'Сканекс',
+    photos:
+  }]
   constructor() { }
 
   ngOnInit(): void {

@@ -1,38 +1,26 @@
-<swiper
-  [slidesPerView]="3"
-  [spaceBetween]="30"
-  [freeMode]="true"
-  [pagination]="{
-    clickable: true
-  }"
-  class="mySwiper"
->
-  <ng-template swiperSlide>Slide 1</ng-template
-  ><ng-template swiperSlide>Slide 2</ng-template
-  ><ng-template swiperSlide>Slide 3</ng-template
-  ><ng-template swiperSlide>Slide 4</ng-template
-  ><ng-template swiperSlide>Slide 5</ng-template
-  ><ng-template swiperSlide>Slide 6</ng-template
-  ><ng-template swiperSlide>Slide 7</ng-template
-  ><ng-template swiperSlide>Slide 8</ng-template
-  ><ng-template swiperSlide>Slide 9</ng-template>
-</swiper>
 <div class="projects__wrapper">
   <div class="projects">
     <div class="accordion__module">
-      <app-project-item title="Что входит в стоимость?">
-        - Регулярная подмена части воды на свежую;<br />
-        - Удаление мусора, остатков корма, отмерших частей растений,
-        экскрементов рыб;<br />
-        - Удаление загрязнений стенок и декораций;<br />
-        - Контроль за состоянием рыб, при необходимости — лечение;<br />
-        - Уход за аквариумным оборудованием, контроль работы;<br />
-        - При обслуживании пресноводного аквариума 4 раза в месяц - гарантия на
-        численность рыб;<br />
-        - В аквариуме с живыми растениями подстригание и черенкование растений,
-        внесение удобрений;<br />
-        - Замена подлежащих регулярной замене или вышедших из строя элементов
-        оборудования;<br />
+      <app-project-item title="slide 1">
+        <swiper
+          [slidesPerView]="3"
+          [spaceBetween]="30"
+          [freeMode]="true"
+          [pagination]="{
+            clickable: true
+          }"
+          class="mySwiper"
+        >
+          <ng-template swiperSlide>Slide 1</ng-template
+          ><ng-template swiperSlide>Slide 2</ng-template
+          ><ng-template swiperSlide>Slide 3</ng-template
+          ><ng-template swiperSlide>Slide 4</ng-template
+          ><ng-template swiperSlide>Slide 5</ng-template
+          ><ng-template swiperSlide>Slide 6</ng-template
+          ><ng-template swiperSlide>Slide 7</ng-template
+          ><ng-template swiperSlide>Slide 8</ng-template
+          ><ng-template swiperSlide>Slide 9</ng-template>
+        </swiper>
       </app-project-item>
     </div>
   </div>
