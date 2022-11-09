@@ -2,15 +2,7 @@
   <div class="projects">
     <div class="accordion__module">
       <app-project-item title="СКАНЕКС">
-        <swiper
-          [slidesPerView]="3"
-          [spaceBetween]="30"
-          [freeMode]="true"
-          [pagination]="{
-            clickable: true
-          }"
-          class="mySwiper"
-        >
+        <swiper [config]="config" class="mySwiper">
           <ng-template swiperSlide
             ><img
               src="assets/projects/projects01-1.png"
@@ -23,15 +15,7 @@
         </swiper>
       </app-project-item>
       <app-project-item title="СКАНЕКС">
-        <swiper
-          [slidesPerView]="3"
-          [spaceBetween]="30"
-          [freeMode]="true"
-          [pagination]="{
-            clickable: true
-          }"
-          class="mySwiper"
-        >
+        <swiper [config]="config">
           <ng-template swiperSlide
             ><img
               src="assets/projects/projects02-1.png"
@@ -44,15 +28,7 @@
         </swiper>
       </app-project-item>
       <app-project-item title="СКАНЕКС">
-        <swiper
-          [slidesPerView]="3"
-          [spaceBetween]="30"
-          [freeMode]="true"
-          [pagination]="{
-            clickable: true
-          }"
-          class="mySwiper"
-        >
+        <swiper [config]="config">
           <ng-template swiperSlide
             ><img
               src="assets/projects/projects03-1.png"
@@ -65,15 +41,7 @@
         </swiper>
       </app-project-item>
       <app-project-item title="СКАНЕКС">
-        <swiper
-          [slidesPerView]="3"
-          [spaceBetween]="30"
-          [freeMode]="true"
-          [pagination]="{
-            clickable: true
-          }"
-          class="mySwiper"
-        >
+        <swiper [config]="config">
           <ng-template swiperSlide
             ><img
               src="assets/projects/projects04-1.png"
