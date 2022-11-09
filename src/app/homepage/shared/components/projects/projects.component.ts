@@ -1,6 +1,7 @@
 import { Projects } from './../../interfaces/projects';
 import { Component, OnInit } from '@angular/core';
 import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
+import { ProjectsItems } from '../../interfaces/projectsItems';
 
 
 @Component({
@@ -11,7 +12,7 @@ import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
 export class ProjectsComponent implements OnInit {
   config: SwiperOptions = {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 30,
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
@@ -24,7 +25,19 @@ export class ProjectsComponent implements OnInit {
   projects: Projects[] = [ {
     id: 1,
     name: 'Сканекс',
-    photos:
+    photos: [{
+id: 1,
+image: 'assets/projects/projects01-1.png'
+    },
+    {
+      id: 2,
+      image: 'assets/projects/projects01-2.png'
+          },
+          {
+            id: 3,
+            image: 'assets/projects/projects01-3.png'
+                },
+  ]
   }]
   constructor() { }
 
