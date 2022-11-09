@@ -4,7 +4,9 @@
     <div class="price__item" *ngFor="let price of prices">
       <div class="price__item-title">
         <div class="item__title-item">{{ price.title | uppercase }}</div>
-        <div class="item__title-price">{{ price.price | uppercase }}</div>
+        <div class="item__title-price">
+          {{ price.price | uppercase }}
+        </div>
       </div>
       <div class="price__item-description">
         {{ price.description | uppercase }}

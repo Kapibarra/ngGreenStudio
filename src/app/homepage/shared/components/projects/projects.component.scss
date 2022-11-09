@@ -50,7 +50,24 @@
   .swiper {
   }
 }
+.projects__title {
+  width: 100%;
+  max-width: 1336px;
 
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  /* identical to box height, or 100% */
+
+  text-transform: uppercase;
+
+  color: #f2ebd8;
+}
 .projects__image {
   max-width: 100%;
 }
