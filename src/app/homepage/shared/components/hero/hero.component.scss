@@ -1,0 +1,42 @@
+.hero__spinner-scroll {
+  position: relative;
+  width: 127px;
+  height: 127px;
+  & .spinner {
+    position: relative;
+    animation-name: spin;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  & .spinner__arrow {
+    position: relative;
+    left: 14%;
+    top: -85%;
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
