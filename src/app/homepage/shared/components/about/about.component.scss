@@ -1,0 +1,15 @@
+.about {
+  width: 100%;
+  max-width: 1328px;
+  margin: 0 auto;
+  & .about__image {
+    display: block;
+    position: relative;
+    & .about__image-inner {
+      display: block;
+      position: absolute;
+      top: 23.2%;
+      left: -6.45%;
+    }
+  }
+}
