@@ -2,17 +2,20 @@
   width: 100%;
   max-width: 1328px;
   margin: 0 auto;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   & .about__image {
+    margin-top: -60px;
     display: block;
     position: relative;
     & .about__image-inner {
+      margin-top: -60px;
       display: block;
       position: absolute;
-      top: 23.2%;
+      top: 36.2%;
       left: -18.45%;
     }
   }
