@@ -1,6 +1,13 @@
 @import "~swiper/css";
 @import "~swiper/css/free-mode";
 @import "~swiper/css/pagination";
+:host ::ng-deep {
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -37,6 +44,22 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1336px;
-  margin: 0 auto;
+  & .service__item {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid rgba(111, 119, 111, 0.44);
+    border-radius: 3px;
+    & .service__item-title {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      /* identical to box height, or 125% */
+
+      color: #f2ebd8;
+    }
+  }
 }
