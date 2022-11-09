@@ -1,5 +1,9 @@
 .acc-header {
-  border-top: 1px solid #70b2eb;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   min-height: 30px;
   cursor: pointer;
   display: flex;
@@ -9,13 +13,19 @@
 }
 
 .header__title {
-  font-family: "Ubuntu";
+  font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 20px;
-  color: #282828;
-  margin-bottom: 10px;
+  font-size: 86px;
+  line-height: 104px;
+  /* identical to box height, or 121% */
+
+  text-transform: uppercase;
+
+  color: #f2ebd8;
+  @media (max-width: 768px) {
+    font-size: 64px;
+  }
 }
 
 .body {
