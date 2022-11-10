@@ -44,7 +44,7 @@ export class ServicesComponent implements OnInit {
   ];
 
   config: SwiperOptions = {
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: true,
     pagination: { clickable: true },
@@ -55,7 +55,7 @@ export class ServicesComponent implements OnInit {
     },
     breakpoints: {
       '768': {
-        slidesPerView: 2.5,
+        slidesPerView: 1,
       },
     },
   };
