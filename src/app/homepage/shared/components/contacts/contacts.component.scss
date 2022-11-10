@@ -115,5 +115,11 @@
     }
   }
 }
-.contacts__form {
+.contacts__bottom {
+  min-height: 150px;
+  background: #212721;
+  margin-top: -150px;
+  @media screen and (max-width: 428px) {
+    display: none;
+  }
 }
