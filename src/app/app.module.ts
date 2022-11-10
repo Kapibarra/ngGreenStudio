@@ -16,6 +16,7 @@ import { ProcessComponent } from './homepage/shared/components/process/process.c
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { ProjectItemComponent } from './homepage/shared/components/projects/project-item/project-item.component';
+import { FormComponent } from './homepage/shared/components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectItemComponent } from './homepage/shared/components/projects/proj
     ProcessComponent,
     ContactsComponent,
     FooterComponent,
-    ProjectItemComponent
+    ProjectItemComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
