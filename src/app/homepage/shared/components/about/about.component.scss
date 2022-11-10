@@ -11,12 +11,21 @@
     margin-top: -60px;
     display: block;
     position: relative;
+    @media screen and (max-width: 428px) {
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+    }
     & .about__image-inner {
       margin-top: -60px;
       display: block;
       position: absolute;
       top: 36.2%;
       left: -18.45%;
+      // @media screen and (max-width: 428px) {
+      //   max-width: 320px;
+      //   width: 100%;
+      // }
     }
   }
   & .about__description {
@@ -35,12 +44,20 @@
 
       color: #f2ebd8;
       margin-bottom: 60px;
+      @media screen and (max-width: 428px) {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 30px;
+      }
     }
     & .about__description-cards {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      @media screen and (max-width: 428px) {
+        justify-content: center;
+      }
       & .description__card-item {
         display: flex;
         flex-direction: row;

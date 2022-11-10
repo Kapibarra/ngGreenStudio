@@ -7,6 +7,9 @@
 .hero__wrapper {
   background-image: url(../../../../../assets/imgs/herobg.png);
   background-size: cover;
+  @media screen and (max-width: 428px) {
+    background-position: center;
+  }
 }
 .hero__section-1 {
   font-family: "Source Sans 3";
@@ -27,6 +30,10 @@
   margin-right: auto;
   margin-bottom: 75px;
   align-items: center;
+  @media screen and (max-width: 428px) {
+    font-size: 84px;
+    justify-content: center;
+  }
 }
 .hero__section-2 {
   font-family: "Source Sans 3";
@@ -47,6 +54,10 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 75px;
+  @media screen and (max-width: 428px) {
+    font-size: 44px;
+    justify-content: center;
+  }
 }
 .hero__section-3 {
   font-family: "Source Sans 3";
@@ -67,6 +78,11 @@
   margin-left: auto;
   align-items: center;
   padding-bottom: 120px;
+  @media screen and (max-width: 428px) {
+    font-size: 64px;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
 }
 .hero__spinner-scroll {
   position: relative;

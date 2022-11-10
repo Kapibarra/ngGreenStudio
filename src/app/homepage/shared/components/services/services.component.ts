@@ -51,7 +51,7 @@ export class ServicesComponent implements OnInit {
     scrollbar: { draggable: true },
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     breakpoints: {
       '768': {

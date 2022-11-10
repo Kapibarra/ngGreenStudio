@@ -66,6 +66,7 @@
     padding: 20px;
     border: 1px solid rgba(111, 119, 111, 0.44);
     border-radius: 3px;
+    min-height: 240px;
     & .service__item-title {
       margin-top: 15px;
       margin-bottom: 25px;
@@ -77,6 +78,14 @@
       /* identical to box height, or 125% */
 
       color: #f2ebd8;
+    }
+    & .service__item-image {
+      width: 100%;
+      max-width: 100%;
+      & img {
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }

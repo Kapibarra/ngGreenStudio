@@ -50,12 +50,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .contacts__details {
   width: 100%;
   max-width: 490px;
+  box-sizing: border-box;
   min-height: 600px;
   background-image: url(../../../../../assets/imgs/contactsbg.png);
+  background-size: cover;
   background-repeat: no-repeat;
   border: 6px solid rgba(111, 119, 111, 0.44);
   border-radius: 14px;

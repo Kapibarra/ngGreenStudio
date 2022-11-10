@@ -67,7 +67,17 @@
   text-transform: uppercase;
 
   color: #f2ebd8;
+  @media screen and (max-width: 428px) {
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+  }
 }
 .projects__image {
   max-width: 100%;
+}
+.projects {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
