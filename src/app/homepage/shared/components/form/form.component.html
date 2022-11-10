@@ -1,1 +1,28 @@
-<p>form works!</p>
+<form
+  class="contacts__form"
+  (ngSubmit)="onSubmit(formValue.value)"
+  #formValue="ngForm"
+  [formGroup]="form"
+>
+  <input
+    placeholder="Введите Имя"
+    ngModel
+    name="name"
+    [formControl]="getFormControl('name')"
+  />
+  <input placeholder="Введите E-mail" ngModel name="email" />
+  <input placeholder="Введите Телефон" ngModel name="phone" />
+  <p>ЧТО ВАС ЗАИНТЕРЕСОВАЛО?</p>
+  <select ngModel name="service">
+    <option>Электромонтажные работы</option>
+    <option>Сантехнические работы</option>
+    <option>Другое</option>
+  </select>
+  <button type="submit" class="form__button">Отправить</button>
+  <p class="smalltext">
+    Гарантируем конфидициальность и целевое использование данных
+  </p>
+  <div class="popUp popUpVisible" id="popUp">
+    <img src="assets/icons/Done.png" /> Ваше сообщение успешно отправлено!
+  </div>
+</form>

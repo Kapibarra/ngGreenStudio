@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { ProjectItemComponent } from './homepage/shared/components/projects/project-item/project-item.component';
 import { FormComponent } from './homepage/shared/components/form/form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,15 +34,18 @@ import { FormComponent } from './homepage/shared/components/form/form.component'
     ContactsComponent,
     FooterComponent,
     ProjectItemComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
