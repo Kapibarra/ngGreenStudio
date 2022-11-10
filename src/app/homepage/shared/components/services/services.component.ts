@@ -8,6 +8,23 @@ import SwiperCore, { SwiperOptions, Navigation, Autoplay } from 'swiper';
   styleUrls: ['./services.component.scss'],
 })
 export class ServicesComponent implements OnInit {
+  config: SwiperOptions = {
+    breakpoints: {
+      '320': {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      '768': {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      '1024': {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+    // scrollbar: { draggable: true },
+  };
   services: Services[] = [
     {
       title: 'Крупномерные растения',
@@ -43,22 +60,6 @@ export class ServicesComponent implements OnInit {
     },
   ];
 
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: true,
-    pagination: { clickable: true },
-    scrollbar: { draggable: true },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: true,
-    },
-    breakpoints: {
-      '768': {
-        slidesPerView: 1,
-      },
-    },
-  };
   constructor() {}
 
   ngOnInit(): void {}
