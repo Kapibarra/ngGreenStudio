@@ -5,6 +5,7 @@
   .swiper-wrapper {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
   }
 }
 
@@ -39,7 +40,23 @@
   height: 100%;
   object-fit: cover;
 }
+.service__title {
+  width: 100%;
+  max-width: 1336px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  /* or 100% */
 
+  text-transform: uppercase;
+
+  color: #f2ebd8;
+}
 .service {
   display: flex;
   flex-direction: row;
