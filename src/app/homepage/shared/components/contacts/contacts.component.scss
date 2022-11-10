@@ -1,0 +1,106 @@
+.contacts__wrapper {
+  background: #ffffff;
+}
+
+.contacts__title {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  /* identical to box height, or 100% */
+
+  text-transform: uppercase;
+
+  color: #3a423a;
+  width: 100%;
+  max-width: 1336px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+.contacts__button {
+  width: 100%;
+  max-width: 136px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #212721;
+  color: #212721;
+  margin-bottom: 50px;
+  & a {
+    text-decoration: none;
+    color: #212721;
+  }
+}
+.contacts {
+  width: 100%;
+  max-width: 1336px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts__details {
+  width: 100%;
+  max-width: 490px;
+  min-height: 600px;
+  background-image: url(../../../../../assets/imgs/contactsbg.png);
+  background-repeat: no-repeat;
+  border: 6px solid rgba(111, 119, 111, 0.44);
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 40px;
+  & .contacts__detail-title {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    /* identical to box height */
+
+    color: #ffffff;
+    margin-bottom: 130px;
+  }
+  & .contacts__detail-phone {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    & img {
+      margin-right: 25px;
+    }
+  }
+  & .contacts__detail-email {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    & img {
+      margin-right: 25px;
+    }
+  }
+}

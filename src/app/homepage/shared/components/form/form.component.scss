@@ -1,0 +1,96 @@
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  & input {
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+  & input::placeholder {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height, or 167% */
+
+    color: #8d8d8d;
+    border: none;
+  }
+  & .bigtext {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    color: #3a423a;
+  }
+  & select {
+    margin-top: 15px;
+    color: #24242e;
+    background: rgba(#8d8d8d, 0.3);
+    height: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 167% */
+    margin-bottom: 30px;
+    color: #3a423a;
+    & option {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      /* or 167% */
+
+      color: #3a423a;
+    }
+  }
+  & .smalltext {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 20px;
+    /* or 167% */
+
+    color: #3a423a;
+  }
+  & .form__button {
+    width: 128px;
+    height: 50px;
+    text-transform: uppercase;
+    background: #4a524a;
+    border-radius: 4px;
+    border-color: #4a524a;
+    border-style: none;
+    color: #ffffff;
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      background: #2bdd8b;
+      color: #24242e;
+    }
+  }
+}
