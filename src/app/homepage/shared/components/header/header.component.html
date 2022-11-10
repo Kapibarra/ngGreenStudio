@@ -4,11 +4,18 @@
       <img class="header__logo" src="assets/imgs/logo.png" />
     </div>
     <ul class="header__nav">
-      <li class="header__nav-item"><a>О НАС</a></li>
-      <li class="header__nav-item"><a>ПРОЕКТЫ</a></li>
-      <li class="header__nav-item"><a>КОНТАКТЫ</a></li>
-      <li class="header__nav-item"><a>КАК РАБОТАЕМ?</a></li>
+      <li class="header__nav-item">
+        <a (click)="onClickScroll('about')">О НАС</a>
+      </li>
+      <li class="header__nav-item">
+        <a (click)="onClickScroll('projects')">ПРОЕКТЫ</a>
+      </li>
+      <li class="header__nav-item">
+        <a (click)="onClickScroll('contacts')">КОНТАКТЫ</a>
+      </li>
+      <li class="header__nav-item">
+        <a (click)="onClickScroll('process')">КАК РАБОТАЕМ?</a>
+      </li>
     </ul>
-    <div class="header__burger"></div>
   </div>
 </div>
