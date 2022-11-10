@@ -45,6 +45,60 @@ export class ProjectsComponent implements OnInit {
         },
       ],
     },
+    {
+      id: 1,
+      name: 'Сканекс',
+      photos: [
+        {
+          id: 1,
+          image: 'assets/projects/projects01-1.png',
+        },
+        {
+          id: 2,
+          image: 'assets/projects/projects01-2.png',
+        },
+        {
+          id: 3,
+          image: 'assets/projects/projects01-3.png',
+        },
+      ],
+    },
+    {
+      id: 1,
+      name: 'Сканекс',
+      photos: [
+        {
+          id: 1,
+          image: 'assets/projects/projects01-1.png',
+        },
+        {
+          id: 2,
+          image: 'assets/projects/projects01-2.png',
+        },
+        {
+          id: 3,
+          image: 'assets/projects/projects01-3.png',
+        },
+      ],
+    },
+    {
+      id: 1,
+      name: 'Сканекс',
+      photos: [
+        {
+          id: 1,
+          image: 'assets/projects/projects01-1.png',
+        },
+        {
+          id: 2,
+          image: 'assets/projects/projects01-2.png',
+        },
+        {
+          id: 3,
+          image: 'assets/projects/projects01-3.png',
+        },
+      ],
+    },
   ];
   constructor() {}
 

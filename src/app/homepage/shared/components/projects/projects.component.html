@@ -1,57 +1,14 @@
 <div class="projects__title">НАШИ РАБОТЫ</div>
 <div class="projects__wrapper">
   <div class="projects">
-    <div class="accordion__module">
-      <app-project-item title="СКАНЕКС">
+    <div class="accordion__module" *ngFor="let project of projects">
+      <app-project-item title="{{ project.name }}">
         <swiper [config]="config" class="mySwiper">
-          <ng-template swiperSlide
-            ><img
-              src="assets/projects/projects01-1.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide
-            ><img
-              src="assets/projects/projects01-2.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide>Slide 3</ng-template>
-        </swiper>
-      </app-project-item>
-      <app-project-item title="СКАНЕКС">
-        <swiper [config]="config">
-          <ng-template swiperSlide
-            ><img
-              src="assets/projects/projects02-1.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide
-            ><img
-              src="assets/projects/projects02-2.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide>Slide 3</ng-template>
-        </swiper>
-      </app-project-item>
-      <app-project-item title="СКАНЕКС">
-        <swiper [config]="config">
-          <ng-template swiperSlide
-            ><img
-              src="assets/projects/projects03-1.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide
-            ><img
-              src="assets/projects/projects03-2.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide>Slide 3</ng-template>
-        </swiper>
-      </app-project-item>
-      <app-project-item title="СКАНЕКС">
-        <swiper [config]="config">
-          <ng-template swiperSlide
-            ><img
-              src="assets/projects/projects04-1.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide
-            ><img
-              src="assets/projects/projects04-2.png"
-              class="projects__image" /></ng-template
-          ><ng-template swiperSlide>Slide 3</ng-template>
+          <ng-container *ngFor="let slide of project.photos">
+            <ng-template swiperSlide
+              ><img src="{{ slide.image }}" class="projects__image"
+            /></ng-template>
+          </ng-container>
         </swiper>
       </app-project-item>
     </div>
