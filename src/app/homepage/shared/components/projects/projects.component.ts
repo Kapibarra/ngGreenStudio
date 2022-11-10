@@ -23,6 +23,10 @@ export class ProjectsComponent implements OnInit {
       '768': {
         slidesPerView: 2.5,
       },
+      '1924': {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
     },
   };
 
