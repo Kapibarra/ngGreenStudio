@@ -10,16 +10,28 @@
     name="name"
     [formControl]="getFormControl('name')"
   />
-  <input placeholder="Введите E-mail" ngModel name="email" />
-  <input placeholder="Введите Телефон" ngModel name="phone" />
+  <input
+    placeholder="Введите E-mail"
+    ngModel
+    name="email"
+    [formControl]="getFormControl('email')"
+  />
+  <input
+    placeholder="Введите Телефон"
+    ngModel
+    name="phone"
+    [formControl]="getFormControl('phone')"
+  />
   <p class="bigtext">ЧТО ВАС ЗАИНТЕРЕСОВАЛО?</p>
   <select ngModel name="service">
     <option>Крупномерные растения</option>
     <option>Вертикальное озеленение</option>
-    <option>Другое</option>
-    <option>Другое</option>
-    <option>Другое</option>
-    <option>Другое</option>
+    <option>Подвесные композиции</option>
+    <option>Настольные композиции</option>
+    <option>Флорариумы</option>
+    <option>Интерьерные букеты</option>
+    <option>Перегородки из растений</option>
+    <option>Фитостена</option>
   </select>
   <button type="submit" class="form__button">Отправить</button>
   <div class="popUp" id="popUp">Ваше сообщение успешно отправлено!</div>

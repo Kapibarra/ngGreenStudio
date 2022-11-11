@@ -20,9 +20,9 @@ export class FormComponent implements OnInit {
   constructor(private http: HttpClient, private fb: FormBuilder) {
     this.form = this.fb.group({
       Email: [null, [Validators.required, Validators.email]],
-      name: [null],
+      name: [null, [Validators.required]],
       service: [null],
-      phone: [null],
+      phone: [null, Validators.required, Validators.minLength(10)],
     });
   }
 
